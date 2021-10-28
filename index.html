@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alias Generator</title>
+    <link rel="shortcut icon" type="image/png" href="id.png" />
+
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="intro">
+            <h1>Alias Generator</h1>
+            <div class="howTo">
+                <p>
+                    Build an online alias at the click of a button! <br> Use a digital alias to help you fill out test templates, forms or registries. You can customize some parts of your alias through the dropdown selections below. If you don't specify, all information will be randomized.
+                </p>
+                <button class="generate" id="generateOne">Generate</button>
+            </div>
+        </div>
+        <div class="selectors">
+            <div class="gender">
+                <label for="gender" >Gender:</label>
+                <select name="gender" id="gender">
+                    <option value="female">Female</option>
+                    <option value="male">Male</option>
+                </select>
+            </div>
+
+            <div class="continent">
+                <label for="continent">Continent:</label>
+                <select name="continent" id="continent">
+                    <option value="NA">North America</option>
+                    <option value="SA">South America</option>
+                    <option value="Europe">Europe</option>
+                    <option value="Asia">Asia</option>
+                    <option value="Oceania">Oceania</option>
+                </select>
+            </div>
+
+            <div class="age">
+                <label for="age">Age Range:</label>
+                <select name="age" id="age">
+                    <option value="under18">Under 18</option>
+                    <option value="18to28">18 to 28</option>
+                    <option value="29to35">29 to 35</option>
+                    <option value="36to50">36 to 50</option>
+                    <option value="51to65">51 to 65</option>
+                    <option value="65Plus">Over 65</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="outputOne"></div>
+        <!-- results from generateOne append here -->
+
+        <div class="loadMore">
+            <p>Alternatively, if you want a list of aliases, you can change the number you want to see at once and click the "Generate List" button:</p>
+            <div>
+                <input type="number" value="5" class="listNumber">
+                <button class="generate" id="generateMore">Generate List</button>
+            </div>
+        </div>
+
+        <div class="outputMore"></div>
+        <!-- results from generateOne will append here -->
+    </div>
+    <p class="sources">All aliases are random, and any resemblance to real life individuals are coincidental. All information provided by the <a href="https://randomuser.me/">RandomUser API</a></p>
+
+    <script src="aliasGenerator.js"></script>
+    
+</body>
+</html>

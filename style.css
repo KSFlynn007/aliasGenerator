@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body, html{
+    background-color: #67E0A3;
+    margin: 10px;
+    height: 100%;
+    color: #1A310D;
+    font-size: 16px;
+}
+
+.container{
+    background-color: #DBFBED;
+    height: 90vh;
+    border-radius: 10px;
+}
+
+h1{
+    padding-top: 10px;
+    margin: 0;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Gowun Batang',
+    serif;
+}
+
+.howTo{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.howTo > p{
+    width: 70%;
+    padding: 15px;
+}
+
+.generate{
+    padding: 15px;
+    border: 1px solid #67E0A3;
+    background-color: #D88373;
+    color: #DBFBED;
+    font-size: 18px;
+    font-family: 'Gowun Batang',
+    serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    border: none;
+    width: 200px;
+    height: 70px;
+}
+
+.generate:hover{
+    cursor: pointer;
+}
+
+.selectors{
+    display: flex;
+    justify-content: space-around;
+    background-color: #1A310D;
+    color: #DBFBED;
+    font-size: 20px;
+    margin: 0 30px;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+label{
+    font-family: 'Gowun Batang',
+    serif;
+}
+
+#gender:hover,
+#continent:hover,
+#age:hover{
+    cursor: pointer;
+}
+
+#gender,
+#continent,
+#age{
+    font-size: 16px;
+}
+
+.loadMore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+.loadMore > p {
+    width: 70%;
+    padding: 0 15px;
+}
+
+.loadMore > div{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    margin-bottom: 10px;
+}
+
+.box {
+    padding: 10px;
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+    font-size: 0.7em;
+}
+
+.box>div {
+    border: 1px solid grey;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.box img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.sources{
+    text-align: right;
+    font-size: 14px;
+    opacity: 60%;
+}
