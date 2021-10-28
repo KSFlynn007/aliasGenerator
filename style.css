@@ -5,7 +5,7 @@
 }
 
 body, html{
-    background-color: #67E0A3;
+    background-color: #a4eec9;
     margin: 10px;
     height: 100%;
     color: #1A310D;
@@ -13,16 +13,16 @@ body, html{
 }
 
 .container{
-    background-color: #DBFBED;
-    height: 90vh;
+    background-color: #e9faf3;
     border-radius: 10px;
+    padding: 30px 0 70px 0;
 }
 
 h1{
     padding-top: 10px;
     margin: 0;
     text-align: center;
-    font-size: 40px;
+    font-size: 70px;
     font-family: 'Gowun Batang',
     serif;
 }
@@ -41,9 +41,8 @@ h1{
 
 .generate{
     padding: 15px;
-    border: 1px solid #67E0A3;
     background-color: #D88373;
-    color: #DBFBED;
+    color: #e9faf3;
     font-size: 18px;
     font-family: 'Gowun Batang',
     serif;
@@ -64,10 +63,10 @@ h1{
     display: flex;
     justify-content: space-around;
     background-color: #1A310D;
-    color: #DBFBED;
+    color: #e9faf3;
     font-size: 20px;
     margin: 0 30px;
-    padding: 40px;
+    padding: 20px;
     border-radius: 10px;
 }
 
@@ -77,22 +76,32 @@ label{
 }
 
 #gender:hover,
-#continent:hover,
-#age:hover{
+#nationality:hover
+{
     cursor: pointer;
 }
 
 #gender,
-#continent,
-#age{
+#nationality
+{
     font-size: 16px;
+}
+
+span{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.resultsFont{
+    font-size: 14px;
 }
 
 .loadMore{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     padding: 10px 30px;
+    margin-top: 25px;
 }
 
 .loadMore > p {
@@ -109,22 +118,50 @@ input{
     margin-bottom: 10px;
 }
 
-.box {
-    padding: 10px;
-    display: inline-block;
-    width: 25%;
-    text-align: center;
-    font-size: 0.7em;
+input:hover{
+    cursor: pointer;
 }
 
-.box>div {
-    border: 1px solid grey;
+.singleBox{
+    padding: 10px;
+    width: 50%;
+    margin: 20px auto;
+    display: block;
+    text-align: center;
+}
+
+.singleBox>div {
+    border: 1px solid #1A310D;
     padding: 10px;
     overflow: hidden;
 }
 
+.singleBox img {
+    width: 50%;
+    border-radius: 10px;
+}
+
+.box {
+    padding: 10px;
+    display: inline-block;
+    width: 33.3%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.box>div {
+    border: 1px solid #1A310D;
+    padding: 10px;
+    overflow: hidden;
+    min-height: 40px;
+}
+
+.box > div:nth-child(4) {
+    min-height: 70px;
+}
+
 .box img {
-    width: 100%;
+    width: 50%;
     border-radius: 10px;
 }
 
@@ -132,4 +169,22 @@ input{
     text-align: right;
     font-size: 14px;
     opacity: 60%;
+    padding: 3px 0 10px 0;
+}
+
+@media (max-width: 768px) and (min-width: 550px){
+    .box{
+        width: 50%;
+    }
+}
+
+@media (max-width: 550px) and (min-width: 300px) {
+    .selectors{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .box {
+        width: 100%;
+    }
 }
