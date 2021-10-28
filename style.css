@@ -62,6 +62,7 @@ h1{
 .selectors{
     display: flex;
     justify-content: space-around;
+    align-items: center;
     background-color: #1A310D;
     color: #e9faf3;
     font-size: 20px;

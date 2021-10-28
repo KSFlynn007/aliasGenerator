@@ -16,7 +16,7 @@
             <h1>Alias Generator</h1>
             <div class="howTo">
                 <p>
-                    Build an online alias at the click of a button! <br> Use a digital alias to help you fill out test templates, forms or registries. You can customize some parts of your alias through the dropdown selections below. If you don't specify, all information will be randomized.
+                    Get an online alias at the click of a button! <br> Use a digital alias to help you fill out test templates, forms or registries. You can customize either the gender or country aspects of your alias through the dropdown selections below. If you don't specify, all information will be randomized.
                 </p>
                 <button class="generate" id="generateOne">Generate</button>
             </div>
@@ -25,14 +25,18 @@
             <div class="gender">
                 <label for="gender" >Gender:</label>
                 <select name="gender" id="gender">
+                    <option value="null">Random</option>
                     <option value="female">Female</option>
                     <option value="male">Male</option>
                 </select>
             </div>
+            
+            <p>OR</p> 
 
             <div class="nationality">
                 <label for="nationality">Country:</label>
                 <select name="nationality" id="nationality">
+                    <option value="null">Random</option>
                     <option value="AU">Australia</option>
                     <option value="BR">Brazil</option>
                     <option value="CA">Canada</option>
@@ -58,7 +62,7 @@
         <!-- results from generateOne append here -->
 
         <div class="loadMore">
-            <p>Alternatively, if you want a list of aliases, you can change the number you want to see at once and click the "Generate List" button:</p>
+            <p>Alternatively, if you want a list of random aliases, you can change the number you want to see at once and click the "Generate List" button:</p>
             <div>
                 <input type="number" value="6" class="listNumber">
                 <button class="generate" id="generateMore">Generate List</button>

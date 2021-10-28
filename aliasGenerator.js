@@ -4,10 +4,23 @@ const generateMore = document.querySelector('#generateMore');
 const outputOne = document.querySelector('.outputOne');
 const outputMore = document.querySelector('.outputMore');
 const inputVal = document.querySelector('.listNumber');
+const genderSelect = document.getElementById('gender');
+const nationalitySelect = document.getElementById('nationality');
 
 generateOne.addEventListener('click', (e) => {
     outputOne.innerHTML = '';
-    loadOne(url)
+    if(genderSelect.value != 'null' && nationalitySelect.value != 'null'){
+        alert("Sorry, the RandomUser API is not able to select both gender and nationality at the same time, please make sure only one of the dropdowns are specified, or else the alias generated may not be correct!")
+    }
+    if(genderSelect.value != 'null'){
+        let selector1 = `?gender=${genderSelect.value}`;
+        loadOne(url + selector1);
+    } else if (nationalitySelect.value != 'null'){
+        let selector2 = `?nat=${nationalitySelect.value}`;
+        loadOne(url + selector2);
+    } else {
+        loadOne(url);
+    }
 })
 
 function loadOne(url){
