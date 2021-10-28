@@ -53,10 +53,24 @@ h1{
     border: none;
     width: 200px;
     height: 70px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .generate:hover{
     cursor: pointer;
+    animation: pulse 1.2s infinite ;
+}
+
+@keyframes pulse {
+    0%{
+        background-color: #D88373;
+    }
+    50%{
+        background-color: #db6a54;
+    }
+    100%{
+        background-color: #da553a;
+    }
 }
 
 .selectors{
@@ -189,3 +203,4 @@ input:hover{
         width: 100%;
     }
 }
+
