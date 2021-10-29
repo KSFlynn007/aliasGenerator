@@ -209,6 +209,9 @@ input:hover{
         align-items: center;
         justify-content: space-between;
     }
+    .singleBox {
+        width: 100%;
+    }
     .loadMore{
         margin-top: 0;
         flex-direction: column;
